@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopt a Cat😻🐈🐈‍⬛</title>
+    <style>
+      body {
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #ddc9b9 100%);
+        color: #7c6d66;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 10px;
+        color: #e75e43;
+        opacity: 0.9;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid rgb(169, 160, 160);
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 20px;
+        color: #7c6d66;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        color: #7c6d66;
+        margin: 10 0 10px;
+        padding: 10px 15px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #e75e43;
+        color: white;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(51, 48, 48, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .cat_container {
+        max-width: 600px;
+        margin: 0px auto;
+        padding: 30px 60px;
+        border: 1px solid rgba(169, 160, 160, 0.9);
+        border-radius: 10px;
+      }
+      .learn-more {
+        color: #e75e43;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+      .email {
+        font-family: monospace;
+        font-size: 16px;
+        color: #e75e43;
+        opacity: 0.7;
+      }
+      span.benefit {
+        color: #e75e43;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cat_container">
+      <h1>The Beauty of Adopting a Cat</h1>
+      <h2>Specially Stay Cats</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/219/original/kittens.jpg?1705014437"
+        alt="Group of kittens"
+      />
+
+      <hr />
+      <hr />
+
+      <p>
+        <strong>Should I adopt a stray kitten?</strong> Overall, if you're ready
+        and willing to provide the care and attention that a stray cat needs,
+        adopting one can be a <em>Wonderful</em>
+        <span class="benefit">
+          rewarding experience for both you and your new furry friend.</span
+        >
+        Just be sure to do your research and consider all the responsibilities
+        and commitments involved before making a decision.
+        <br />
+      </p>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Cat"
+        target="_blank"
+        class="learn-more"
+        >Learn more about Cats in wikipedia</a
+      >
+
+      <hr />
+
+      <p class="footer">
+        <button>🐈‍⬛ Adopt a Cat!</button>
+
+        This page was build by
+        <a class="email" href="mailto:shawsonia26@yahoo.com" target="_blank"
+          >Sonia Shaw</a
+        >
+      </p>
+    </div>
+    <script>
+      function kittenAdoption() {
+        let greet = prompt("Are you ready to save a life!🐱?");
+        let name = prompt("What is Your Name?");
+        let age = prompt("How old are you?");
+
+        if (age >= 18) {
+          alert(
+            "Thanks " +
+              name +
+              ", We will be in touch. Meanwhile, prepare for adopt a kitten😻!"
+          );
+        } else {
+          alert("I am Sorry " + name + ", You cannot adopt a kitten yet!😿");
+        }
+      }
+
+      let adoptionButton = document.querySelector("button");
+      adoptionButton.addEventListener("click", kittenAdoption);
+    </script>
+  </body>
+</html>
